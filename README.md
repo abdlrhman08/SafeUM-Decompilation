@@ -62,7 +62,7 @@ static List<String> ADDRESS_LISTS = Arrays.asList(new String[] { "193.200.173.45
 
 connects to the port 8080 with the path "Bal"
 
-The Balance Client iterates over the whole ADDRESS_LIST and connects to the last one, which refuses my manual connection
+The Balance Client has an iterator for the ADDRESS_LIST and connects to the first one, which refuses my manual connection
 
 
 ## 3rd Partied Used:
