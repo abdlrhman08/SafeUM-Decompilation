@@ -11,6 +11,13 @@ However all these hosts refuse a manual connection to them for an unknown reason
 
 Every activity has its own path like host:port/Auth for the authentication and creates a single websocket connection for every activity
 
+### The hosts or the ip addresses for a reason the application calls the nodes and in one point of the application when it connects all the acitivites it gets the IP address to connect to using the following snippet
+
+```java
+    SUMApplication.app().getNode()
+```
+
+the .app() method is used to return the instance of the current SUMApplication created in the apps runtime
 
 ## Login Request (Not confirmed yet)
 
