@@ -7,7 +7,7 @@ The address of these websockets can be
 
 Using wireshark the application connects to the first address on boot
 
-However all these hosts refuse a manual connection to them for an unknown reason
+I managed to establish a connection using Postman but I have to figure a payload to send
 
 Every activity has its own path like host:port/Auth for the authentication and creates a single websocket connection for every activity
 
@@ -62,7 +62,11 @@ static List<String> ADDRESS_LISTS = Arrays.asList(new String[] { "193.200.173.45
 
 connects to the port 8080 with the path "Bal"
 
-The Balance Client has an iterator for the ADDRESS_LIST and connects to the first one, which refuses my manual connection
+The Balance Client has an iterator for the ADDRESS_LIST and and it creates a websocket object giving it the name "BalanceClient", all the callbacks for this connection are hndled by the BalanceClientListener Class, there are also extra headers added, which is a cookie given the value session=abcd.
+
+```java
+this.webSocketConnection = new WebSocketClient("BalanceClient", new BalanceClientListener(), this.extraHeaders, this);
+```
 
 
 ## 3rd Partied Used:
