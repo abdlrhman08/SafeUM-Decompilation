@@ -98,7 +98,7 @@ After connection the server replies with a gzip compressed binary response that 
 If we try to connect using a VPN the Keys change to different number indicating that connecting to another server is probably wiser. That explains why using a vpn results in different country numbers.
 
 The hexdump of the uncompresses response:
-![]((https://github.com/abdlrhman08/SafeUM-Decompilation/blob/main/res/hex.png?raw=true)
+![](https://github.com/abdlrhman08/SafeUM-Decompilation/blob/main/res/hex.png?raw=true)
 
 ## 3rd Partied Used:
 
